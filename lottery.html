@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lotteryNumbers = []
+        for (let i = 0; i < 6 ; ) {
+        let lotteryNumber = Math.floor(Math.random()*38) + 1
+        if (!lotteryNumbers.includes(lotteryNumber)) {
+            lotteryNumbers.push(lotteryNumber)
+            i++
+        }
+    }
+        document.write(`A區號碼為: ${lotteryNumbers}`)
+        document.write('<br>')
+        
+        let bNum = Math.floor(Math.random()*8) + 1
+        document.write(`B區號碼為: ${bNum}`)
+    </script>
+</body>
+</html>
